@@ -12,7 +12,9 @@
 
 ## Выбор видео  
 Плеер создан на основе библиотеки, описанной в [документации](https://github.com/devmanorg/video-player-jslib/blob/master/README.md).  
+
 По умолчанию воспроизводится видео по [этой ссылке](https://dvmn.org/media/filer_public/78/db/78db3456-3fd3-4504-9ed9-d2d1fd843c0b/highest_peak.mp4).  
+
 Для загрузки другого видео можно передать ссылку через параметр `src` (ссылки должны заканчиваться на формат файла):  
 ```html
 <script type="text/javascript">
