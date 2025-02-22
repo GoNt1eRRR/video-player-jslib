@@ -3,30 +3,50 @@
 <head>
   <title>Player</title>
   <meta charset="utf-8">
+
   <link rel="stylesheet" href="static/css/font-awesome.min.css">
   <link rel="stylesheet" href="static/css/styles.css">
   <link rel="shortcut icon" href="static/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/static/css/normalize.css">
+
 </head>
 <body>
   <div id="player" class="video-player">
     <div class="js-video-container video-container"></div>
     <div class="video-player-panel">
-      <div>
-        <button type="button" class="js-play-button video-button" hidden>
+      <div class="left-buttons">
+        <button type="button" class="js-play-button panel-buttons" hidden>
           <i class="fa fa-play" aria-hidden="true"></i>
         </button>
-        <button type="button" class="js-pause-button video-button" hidden>
+        <button type="button" class="js-pause-button panel-buttons" hidden>
           <i class="fa fa-pause" aria-hidden="true"></i>
         </button>
-        <button type="button" class="js-mute-button video-button" hidden>
+        <button type="button" class="js-mute-button panel-buttons" hidden>
           <i class="fa fa-volume-up" aria-hidden="true"></i>
         </button>
-        <button type="button" class="js-volume-button video-button" hidden>
+        <button type="button" class="js-volume-button panel-buttons" hidden>
           <i class="fa fa-volume-off" aria-hidden="true"></i>
         </button>
       </div>
-      <div>
-        <button type="button" class="js-fullscreen-button video-button">
+
+      <div class="progressbar-container">
+        <button class="panel-play-time js-current-time"></button>
+
+        <div class="viewing-progressbar js-progress">
+          <div class="viewing-progress-slider js-progress-slider"></div>
+          <span class="dot"></span>
+        </div>
+
+        <button class="panel-play-time js-duration"></button>
+      </div>
+
+      <div class="right-buttons">
+        <button type="button" class="js-fullscreen-button panel-buttons">
           <i class="fa fa-expand" aria-hidden="true"></i>
         </button>
       </div>
